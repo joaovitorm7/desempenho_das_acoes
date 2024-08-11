@@ -4,7 +4,7 @@ Atividade de Matriz do professor Pedro Luis Saraiva Barbosa, que ministra a mat�
 Questão: Você é um engenheiro de dados trabalhando para uma empresa de análise financeira que monitora as flutuações diárias dos preços das ações de cinco empresas em um período de 7 dias. Os preços das ações são registrados em uma matriz onde cada linha representa um dia e cada coluna representa uma empresa. A empresa deseja analisar o desempenho das ações e gerar um relatório com base nos dados coletados.
 
 Considere a seguinte matriz que representa os preços das ações das cinco empresas (A, B, C, D e E) ao longo de uma semana (7 dias):
-# Criação da matriz de preços das ações 
+Criação da matriz de preços das ações 
 precos_acoes = np.array([ 
       [150, 200, 180, 220, 170], 
       [155, 205, 185, 225, 175], 
