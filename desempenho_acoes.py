@@ -9,19 +9,17 @@ precos_acoes = np.array([
     [175, 225, 205, 245, 195], 
     [180, 230, 210, 250, 200]
 ])
-# Calculando a média com a função np.mean.
+
 media_precos = np.mean(precos_acoes, axis=0)
 
 print("Média diária dos preços das ações para cada empresa ao longo da semana:")
 print(media_precos)
 
-# Calcualndo a variação dos preços com as funções np.max e np.min
 variacao_precos = np.max(precos_acoes, axis=0) - np.min(precos_acoes, axis=0)
 
 print("Variação diária das ações para cada empresa ao longo da semana:")
 print(variacao_precos)
 
-# Encontrando o dia do maior e menor com preço com as funções np.argmax e np.argmin.
 precos_B = precos_acoes[:, 1]
 dia_maior_preco = np.argmax(precos_B)
 dia_menor_preco = np.argmin(precos_B)
@@ -29,7 +27,6 @@ dia_menor_preco = np.argmin(precos_B)
 print("Dia da semana em que a ação da empresa B teve o maior preço:", dia_maior_preco + 1)
 print("Dia da semana em que a ação da empresa B teve o menor preço:", dia_menor_preco + 1)
 
-# Aumentando os preços em 5% e calculando a nova média.
 novos_precos_acoes = precos_acoes * 1.05
 nova_media_precos = np.mean(novos_precos_acoes, axis=0)
 
